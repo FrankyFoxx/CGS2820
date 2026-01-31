@@ -4,125 +4,260 @@
    <title>The Salem Oddities & Enchantments</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta charset="utf-8">
-<style>
+
+<style type="text/css">
+
+/* Centering the entire page and setting background */
+body {
+    width: 1000px;              /* required width */
+    margin: auto;               /* centers the page */
+    background-color: #f4f0ff;  /* soft lavender background */
+    background-image: url('images/background.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: left;           /* ensures content is NOT centered */
+}
+
+/* Custom ID and class selectors defined below */
+#wrapper {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 3px solid #4b006e;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+#social {
+    background-color: #f5e6ff;
+    border-left: 4px solid #800080;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Classes */
+.highlight {
+    background-color: #fff3b0; /* soft gold glow */
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.arcane-box {
+    background-color: #f0e6ff; /* pale lavender */
+    border: 2px solid #6a0dad;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* NEW: Smaller body images */
+.body-img {
+    width: 40%;      /* adjust this to your liking */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Headings */
+h1 {
+    color: green;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #4b006e;      /* deep witchy purple */
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #2e003e;
+}
+
+nav a {
+    color: #f4eaff;                 /* soft lavender */
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a6ffcb;                 /* pale green glow */
+    text-shadow: 0 0 6px #a6ffcb;
+}
+
+/* Horizontal rule */
+hr {
+    width: 60%;
+    height: 5px;
+    background-color: #DC143C;
+    border: none;
+}
+
+/* Header banner */
+header {
+    padding-top: 40%;
+    background-image: url('images/banner3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/* Rollover images */
 .rollover {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .rollover img {
-  display: block;
-  width: 200px; 
-  height: auto;
+    width: 200px;
 }
 
 .img-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .rollover:hover .img-hover {
-  opacity: 1;
+    opacity: 1;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 </style>
-
-
-
 </head>
 
-<body style="text-align:center; max-width: 1000px; margin:auto; background-image:url(images/background.png)">
-<br>
-<br>
+<body>
 
+<div id="wrapper"> <!-- wrapper starts -->
 
-<header id="top" style="padding-top:40%;
-background-image:url('images/banner3.png');
-background-repeat:no-repeat;
-background-size:cover; background-position:center center; position:relative;">
-<nav >
+<header id="top">
+<nav>
    <a href="index.htm">Home</a> |
    <a href="Resume.htm">Resume</a>
-   <a href="https://themagickalpath.com/2022/08/07/19-types-of-witchcraft-which-witch-are-you/"> What Type Of Witch Are You?</a>
+   <a href="https://themagickalpath.com/2022/08/07/19-types-of-witchcraft-which-witch-are-you/">What Type Of Witch Are You?</a>
 </nav>
-
 </header>
 
-<main style="font-size:14px">
-  <h1 style="color:green; text-align:center">The Salem Oddities & Enchantments</h1>
-  <hr style="width:60%; height:5px; background-color:#DC143C">
-  <br>
-  <br>
+<main>
+  <h1>The Salem Oddities & Enchantments</h1>
+  <hr>
+
+<br><br>
+
 <div class="rollover">
   <img src="images/lilithhecate.jpg" alt="Lilith Hecate" class="img-default">
   <img src="images/coven.jpg" alt="Coven Hover Image" class="img-hover">
 </div>
 
+<h2>Where Magic Finds Its Keeper</h2>
 
-
-  <h2 style="color:purple; text-align:center">Where Magic Finds Its Keeper</h2>
-
-  <p style="font-size:14px">
+<p>
     At The Salem Oddities & Enchantments, every relic, herb, candle, and spellcasting tool 
     is chosen with intention. Our mission is simple: to place powerful magic into the hands 
     of those who know how to wield it. Step inside and discover the enchantments waiting 
     for their next keeper.
-  </p>
-<h2 style="text-align:center; font-family:arial; color:purple">Witchcraft • Cursed Relics • Arcane Provisions</h2>
-<img src="images/relics.png" alt="Cursed Relics" style="width:25%; height:auto;">
+</p>
 
-  <p style="font-size:14px">
-    Step beyond the veil and into <span style="color:green">The Salem Oddities & Enchantments</span>, 
+<h2>Witchcraft • Cursed Relics • Arcane Provisions</h2>
+<img src="images/relics.png" alt="Cursed Relics" class="body-img">
+
+<p>
+    Step beyond the veil and into <span class="highlight">The Salem Oddities & Enchantments</span>, 
     a witchcraft shop devoted to the strange, the powerful, and the beautifully haunted.
     Whether you're a seasoned practitioner or a curious wanderer, our shelves are filled 
     with everything you need to shape your magic.
-  </p>
+</p>
 
-<h2 style="text-align:center; font-family:arial; color:purple"><i>Who we are and what we do</i></h2>
-<img src="images/herbs.png" alt="Herbs and Candles" style="width:25%; height:auto;">
-   <p style="font-size:14px">A mysterious, dimly lit curiosity shop dealing in rare magical artifacts, <br>
-   ethically sourced bones,enchanted trinkets, and cursed‑object rehabilitation. <br>
-   They also offer “curse detox” services for tourists who accidentally buy something <br>
-   they shouldn’t.</p>
-<h2 style="text-align:center; font-family:arial; color:purple"><i>A little history about The Salem Oddities & Enchantments </i></h2>
-<img src="images/blackthorn.png" alt="Blackthorn Witch" style="width:25%; height:auto;">
-  <p style="font-size:14px">Blackthorn began as a traveling wagon in the early 1800s, run by the enigmatic <br>
-  witch siblings Cassian and Liora Blackthorn. When they settled in Salem in 1837, <br>
-  they opened a permanent storefront. Over the years, the shop became known for its <br>
-  strict ethical code: no stolen relics, no grave‑robbing, and no curses without consent. <br>
-  The Blackthorn line is said to have died out, but the current owner—who appeared in <br>
-  Salem seemingly out of nowhere—claims to be a distant relative.</p>
+<div class="arcane-box"> <!-- arcane-box starts -->
+    <h2><i>Who we are and what we do</i></h2>
+    <img src="images/herbs.png" alt="Herbs and Candles" class="body-img">
+    <p>
+        A mysterious, dimly lit curiosity shop dealing in rare magical artifacts,<br>
+        ethically sourced bones, enchanted trinkets, and cursed‑object rehabilitation.<br>
+        They also offer “curse detox” services for tourists who accidentally buy something<br>
+        they shouldn’t.
+    </p>
+</div> <!-- /arcane-box -->
 
+<h2><i>A little history about The Salem Oddities & Enchantments</i></h2>
+<img src="images/blackthorn.png" alt="Blackthorn Witch" class="body-img">
 
-   
-   </main>
-   <aside>
-     <h2 style="text-align:center; font-family:arial; color:purple"><i>Your Magic Has a Home Here</i></h2>
-  <p style="font-size:14px">
-    From hexes to blessings, from quiet protection to bold transformation, our shop is a
-    sanctuary for all who walk the mystical path. Visit us in historic Salem or explore
-    our enchanted offerings online.
-  </p>
-    
-	 <h3 style="text-align:center">
-	 <a href="#Top">
-<img src="images/icon.png" alt="Scroll Up" style="width:32px; height:32px;" "border:0px"></a> Top Of page</h3>
-   </aside>
-   <footer>
-<p style="font-size:16px; font-weight:bold""><span style="color:green">The Salem Oddities & Enchantments<span></p>
-  <p style="color:red; font-size:16px; font-weight:bold">Serving seekers of magic, mystery, and the arcane.</p>
-  <p style="color:red; font-size:16px; font-weight:bold"> 2026 The Salem Oddities & Enchantments — All Rights Reserved</p>
-  <p style="color:red; font-size:16px; font-weight:bold">
+<p>
+    Blackthorn began as a traveling wagon in the early 1800s, run by the enigmatic<br>
+    witch siblings Cassian and Liora Blackthorn. When they settled in Salem in 1837,<br>
+    they opened a permanent storefront. Over the years, the shop became known for its<br>
+    strict ethical code: no stolen relics, no grave‑robbing, and no curses without consent.<br>
+    The Blackthorn line is said to have died out, but the current owner—who appeared in<br>
+    Salem seemingly out of nowhere—claims to be a distant relative.
+</p>
+
+</main>
+
+<div id="social"> <!-- social starts -->
+<aside>
+    <h2><i>Your Magic Has a Home Here</i></h2>
+
+    <p>
+        From hexes to blessings, from quiet protection to bold transformation, our shop is a
+        sanctuary for all who walk the mystical path. Visit us in historic Salem or explore
+        our enchanted offerings online.
+    </p>
+
+    <h3>
+    <a href="#top">
+    <img src="images/icon.png" alt="Scroll Up" width="32" height="32">
+    </a>
+    Top Of Page
+    </h3>
+</aside>
+</div> <!-- /social -->
+
+<footer>
+<p><span style="color:green">The Salem Oddities & Enchantments</span></p>
+<p style="color:red;">Serving seekers of magic, mystery, and the arcane.</p>
+<p style="color:red;">2026 The Salem Oddities & Enchantments — All Rights Reserved</p>
+<p style="color:red;">
     Contact: <a href="mailto:ssportsm@student.scf.edu">info@salemoddities.com</a>
       |  <a href="tel:8135804192">941-555-5555</a>
-  </p>
+</p>
+
 <svg width="135" height="100">
 <rect x="10" y="10" rx="20" ry="20" width="120" height="80" style="fill:red; stroke:black; stroke-width:3; opacity:0.5" />
-<text x="28" y="55" font-size="18" fill="black">Blessed Be </text></svg>
+<text x="28" y="55" font-size="18" fill="black">Blessed Be</text>
+</svg>
+
 </footer>
+
+</div> <!-- /wrapper -->
 
 </body>
 </html>
-
