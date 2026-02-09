@@ -1,0 +1,187 @@
+/* ============================
+   Global Page Styling
+   ============================ */
+body {
+    margin: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Georgia", serif;
+    color: #e8dff8;
+    text-align: left;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.35);
+    border: 3px solid #4b006e;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Make sizing predictable */
+* {
+    box-sizing: border-box;
+}
+
+/* ============================
+   Header Image
+   ============================ */
+header img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ============================
+   Navigation
+   ============================ */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    color: #f4eaff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a:hover,
+nav .selected {
+    color: #a6ffcb;
+    text-shadow: 0 0 6px #a6ffcb;
+}
+
+/* ============================
+   Resume Layout (FLEXBOX)
+   ============================ */
+main {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #4b006e;
+    background-color: rgba(20, 0, 30, 0.6);
+    margin-top: 20px;
+}
+
+/* Left column */
+aside {
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid #4b006e;
+    color: #d8c7f5;
+}
+
+aside h2 {
+    margin: 12px 0;
+    padding: 0;
+    color: #caa8ff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px #4b006e;
+}
+
+/* Right column */
+section {
+    width: 70%;
+    padding: 20px;
+}
+
+/* ============================
+   Headings (RIGHT COLUMN)
+   ============================ */
+section h2 {
+    font-family: "Georgia", serif;
+    color: #caa8ff;
+    border-bottom: 2px solid #4b006e;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px #4b006e;
+}
+
+section h2:first-of-type {
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+h3 {
+    text-align: center;
+    color: #e8dff8;
+}
+
+/* ============================
+   Text Elements
+   ============================ */
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ============================
+   Images
+   ============================ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-pic {
+    width: 180px;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: 2px solid #4b006e;
+    box-shadow: 0 0 8px rgba(75, 0, 110, 0.6);
+}
+
+/* ============================
+   Extra Resume Sections
+   ============================ */
+.resume-extra {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: rgba(240, 230, 255, 0.25);
+    border-left: 3px solid #6a0dad;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.resume-extra h2 {
+    color: #caa8ff;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 4px #4b006e;
+}
+
+.resume-extra p {
+    line-height: 1.5;
+    color: #e8dff8;
+    font-size: 15px;
+}
+
+/* ============================
+   Footer
+   ============================ */
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -1,0 +1,167 @@
+/* ============================
+   Global Page Styling
+   ============================ */
+body {
+    margin: 0; /* remove default browser margin */
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional: keeps background in place */
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.8); /* optional readability layer */
+    border: 3px solid #4b006e;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Social Section */
+#social {
+    background-color: #f5e6ff;
+    border-left: 4px solid #800080;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ============================
+   Classes
+   ============================ */
+.highlight {
+    background-color: #fff3b0;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.arcane-box {
+    background-color: #f0e6ff;
+    border: 2px solid #6a0dad;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.body-img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ============================
+   Headings
+   ============================ */
+h1 {
+    color: green;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* ============================
+   Text Elements
+   ============================ */
+p {
+    font-size: 14px;
+}
+
+/* ============================
+   Images
+   ============================ */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================
+   Navigation
+   ============================ */
+nav {
+    background-color: #4b006e;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #2e003e;
+}
+
+nav a {
+    color: #f4eaff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a6ffcb;
+    text-shadow: 0 0 6px #a6ffcb;
+}
+
+/* ============================
+   Horizontal Rule
+   ============================ */
+hr {
+    width: 60%;
+    height: 5px;
+    background-color: #DC143C;
+    border: none;
+}
+
+/* ============================
+   Header Banner
+   ============================ */
+header {
+    padding-top: 40%;
+    background-image: url('images/banner3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/* ============================
+   Rollover Images
+   ============================ */
+.rollover {
+    position: relative;
+    display: inline-block;
+}
+
+.rollover img {
+    width: 200px;
+}
+
+.img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.rollover:hover .img-hover {
+    opacity: 1;
+}
+
+/* ============================
+   Footer
+   ============================ */
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
