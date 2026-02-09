@@ -1,128 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Resume | Franky Foxx</title>
+/* ============================
+   Global Page Styling
+   ============================ */
+body {
+    margin: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Georgia", serif;
+    color: #e8dff8;
+    text-align: left;
+}
 
-  <meta name="author" content="Franky Foxx">
-  <meta name="description" content="Professional resume for Franky Foxx, a witchy-gothic inspired web designer specializing in branding, responsive layouts, and modern CSS.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Wrapper */
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.35);
+    border: 3px solid #4b006e;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
 
-  <!-- External Stylesheet -->
-  <link href="FFResume.css" rel="stylesheet" type="text/css">
-</head>
+/* Make sizing predictable */
+* {
+    box-sizing: border-box;
+}
 
-<body>
-<div id="wrapper">
+/* ============================
+   Header Image
+   ============================ */
+header img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-  <header>
-    <a href="index.htm">
-      <img src="images/ffbanner.png" alt="FrankyFoxx Witchy-Gothic Banner">
-    </a>
-  </header>
+/* ============================
+   Navigation
+   ============================ */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.htm" class="selected">Resume</a></li>
-      <li><a href="portfolio.htm">Portfolio</a></li>
-      <li><a href="newsletter.htm">Newsletter</a></li>
-      <li><a href="contact.htm">Contact</a></li>
-    </ul>
-  </nav>
-      <img src="images/frankyfoxx.jpg" alt="Photo of Franky Foxx" class="profile-pic">
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
 
-    <h1>Shelia.S aka FrankyFoxx</h1>
+nav a {
+    color: #f4eaff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
-    <address>
-      Bradenton, FL 34208<br>
-      <a href="mailto:Shelia@FrankyFoxx.com">Shelia@FrankyFoxx.com</a>
-    </address>
+nav a:hover,
+nav .selected {
+    color: #a6ffcb;
+    text-shadow: 0 0 6px #a6ffcb;
+}
 
-    <div class="resume-extra">
+/* ============================
+   Resume Layout (FLEXBOX)
+   ============================ */
+main {
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid #4b006e;
+    background-color: rgba(20, 0, 30, 0.6);
+    margin-top: 20px;
+}
 
-      <h2>Goal</h2>
-      <p>
-        To build and grow my own creative studio specializing in custom websites and mobile apps for small businesses, blending modern development with distinctive alternative aesthetics.
-      </p>
+/* Left column */
+aside {
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid #4b006e;
+    color: #d8c7f5;
+}
 
-      <h2>Hobbies</h2>
-      <p>
-        Painting, drawing, creative writing, and collecting and selling Pokémon cards.
-      </p>
+aside h2 {
+    margin: 12px 0;
+    padding: 0;
+    color: #caa8ff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px #4b006e;
+}
 
-      <h2>About Me</h2>
-      <p>
-        I am an alternative‑styled mother from Florida and a multi‑generation Wiccan, which inspires the witchcraft‑themed branding of my work. I have a deep love for horror and sci‑fi, and I bring that imaginative energy into my designs.
-        I’m a mother of three, and my biggest motivation is creating a strong future for them. My passion for coding began in high school—customizing MySpace layouts and taking my first web design class—and it has grown into a lifelong commitment to creative technology.
-      </p>
+/* Right column */
+section {
+    width: 70%;
+    padding: 20px;
+}
 
-    </div>
+/* ============================
+   Headings (RIGHT COLUMN)
+   ============================ */
+section h2 {
+    font-family: "Georgia", serif;
+    color: #caa8ff;
+    border-bottom: 2px solid #4b006e;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 4px #4b006e;
+}
 
-<main>
+section h2:first-of-type {
+    margin-top: 0;
+}
 
-  <!-- LEFT COLUMN -->
-  <aside>
-    <h2>Education</h2>
-    <h2>Employment</h2>
-    <h2>Certifications</h2>
-    <h2>Skills</h2>
-  </aside>
+h1 {
+    text-align: center;
+    color: green;
+}
 
-  <!-- RIGHT COLUMN -->
-  <section>
+h3 {
+    text-align: center;
+    color: #e8dff8;
+}
 
-    <!-- EDUCATION -->
-    <h2>Education</h2>
-    <p>
-      <strong>2025–Current</strong> — State College of Florida, Bradenton, FL<br>
-      Working towards my Associate's Degree in Computer Programming and Analysis  
-      (<a href="https://www.scf.edu" target="_blank">SCF.edu</a>)
-    </p>
+/* ============================
+   Text Elements
+   ============================ */
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
 
-    <!-- EMPLOYMENT -->
-    <h2>Employment</h2>
-    <p>
-      <strong>2023–2025</strong> — Manager, Sarasota, FL<br>
-      Manager / shift lead, customer service
-    </p>
+/* ============================
+   Images
+   ============================ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-    <p>
-      <strong>2021–2023</strong> — Retail Associate, Bradenton, FL<br>
-      Customer service, inventory management, POS operation
-    </p>
+.profile-pic {
+    width: 180px;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: 2px solid #4b006e;
+    box-shadow: 0 0 8px rgba(75, 0, 110, 0.6);
+}
 
-    <!-- CERTIFICATIONS -->
-    <h2>Certifications</h2>
-    <p>
-      <strong>2025</strong> — <abbr title="Google IT Support Professional Certificate">Google IT Support</abbr>
-    </p>
+/* ============================
+   Extra Resume Sections
+   ============================ */
+.resume-extra {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: rgba(240, 230, 255, 0.25);
+    border-left: 3px solid #6a0dad;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
 
-    <p>
-      <strong>2024</strong> — 
-      <abbr title="Web Design for Everybody: Basics of Web Development & Coding Specialization">
-        Web Design Specialization
-      </abbr>
-    </p>
+.resume-extra h2 {
+    color: #caa8ff;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 4px #4b006e;
+}
 
-    <!-- SKILLS -->
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5, CSS3, Flexbox, Grid</li>
-      <li>Programming with JavaScript & Python</li>
-      <li>Responsive Web Design</li>
-      <li>IT Support</li>
-      <li>Graphic Design</li>
-    </ul>
+.resume-extra p {
+    line-height: 1.5;
+    color: #e8dff8;
+    font-size: 15px;
+}
 
-  </section>
-
-</main>
-
-  <footer>
-    © 2026 Franky Foxx — Web Designer
-  </footer>
-
-</div> <!-- /wrapper -->
-</body>
-</html>
+/* ============================
+   Footer
+   ============================ */
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
