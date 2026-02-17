@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>The Salem Oddities & Enchantments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="FrankyFoxx.css">
-
+    <link rel="stylesheet" href="frankyfoxx.css">
 </head>
 
 <body>
 
-<div id="wrapper"> <!-- wrapper starts -->
+<div id="wrapper">
 
 <header id="top">
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html" class="selected">Resume</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="newsletter.html">Newsletter</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="transcript.html">Transcript</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
+            <li>
+                <a href="https://themagickalpath.com/2022/08/07/19-types-of-witchcraft-which-witch-are-you/" target="_blank">
+                    What Type Of Witch Are You?
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <main>
+
     <h1>The Salem Oddities & Enchantments</h1>
     <hr>
 
-    <br><br>
-
+    <!-- ROLLOVER IMAGE FIXED -->
     <div class="rollover">
-        <img src="images/lilithhecate.jpg" alt="Lilith Hecate" class="img-default">
-        <img src="images/coven.jpg" alt="Coven Hover Image" class="img-hover">
+        <img src="images/lilithhecate.jpg"
+             alt="Lilith Hecate"
+             class="img-default"
+             onmouseover="this.src='images/coven.jpg';"
+             onmouseout="this.src='images/lilithhecate.jpg';">
     </div>
 
     <h2>Where Magic Finds Its Keeper</h2>
@@ -57,7 +64,7 @@
         with everything you need to shape your magic.
     </p>
 
-    <div class="arcane-box"> <!-- arcane-box starts -->
+    <div class="arcane-box">
         <h2><i>Who we are and what we do</i></h2>
         <img src="images/herbs.png" alt="Herbs and Candles" class="body-img">
         <p>
@@ -66,23 +73,23 @@
             They also offer “curse detox” services for tourists who accidentally buy something<br>
             they shouldn’t.
         </p>
-    </div> <!-- /arcane-box -->
+    </div>
 
     <h2><i>A little history about The Salem Oddities & Enchantments</i></h2>
     <img src="images/blackthorn.png" alt="Blackthorn Witch" class="body-img">
 
     <p>
-        Blackthorn began as a traveling wagon in the early 1800s, run by the enigmatic<br>
-        witch siblings Cassian and Liora Blackthorn. When they settled in Salem in 1837,<br>
-        they opened a permanent storefront. Over the years, the shop became known for its<br>
-        strict ethical code: no stolen relics, no grave‑robbing, and no curses without consent.<br>
-        The Blackthorn line is said to have died out, but the current owner—who appeared in<br>
+        Blackthorn began as a traveling wagon in the early 1800s, run by the enigmatic
+        witch siblings Cassian and Liora Blackthorn. When they settled in Salem in 1837,
+        they opened a permanent storefront. Over the years, the shop became known for its
+        strict ethical code: no stolen relics, no grave‑robbing, and no curses without consent.
+        The Blackthorn line is said to have died out, but the current owner—who appeared in
         Salem seemingly out of nowhere—claims to be a distant relative.
     </p>
 
 </main>
 
-<div id="social"> <!-- social starts -->
+<div id="social">
 <aside>
     <h2><i>Your Magic Has a Home Here</i></h2>
 
@@ -94,12 +101,12 @@
 
     <h3>
         <a href="#top">
-            <img src="images/icon.png" alt="Scroll Up" width="32" height="32">
+            <img src="images/icon.png" alt="Scroll Up" class="icon-small">
         </a>
         Top Of Page
     </h3>
 </aside>
-</div> <!-- /social -->
+</div>
 
 <footer>
     <p><span style="color:green">The Salem Oddities & Enchantments</span></p>
@@ -115,13 +122,9 @@
               style="fill:red; stroke:black; stroke-width:3; opacity:0.5" />
         <text x="28" y="55" font-size="18" fill="black">Blessed Be</text>
     </svg>
-
 </footer>
 
-</div> <!-- /wrapper -->
+</div>
 
 </body>
 </html>
-
-
-
