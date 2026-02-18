@@ -24,7 +24,6 @@ body {
    IMAGE SIZING (SAFE + CONTROLLED)
    ============================================================ */
 
-/* Default images behave normally */
 img {
     max-width: 100%;
     height: auto;
@@ -32,17 +31,14 @@ img {
     margin: 0 auto;
 }
 
-/* Banner images */
 .hero-img {
     width: 60%;
 }
 
-/* Body images (index, portfolio, etc.) */
 .body-img {
     width: 40%;
 }
 
-/* Profile image */
 .profile-pic {
     width: 140px;
     height: auto;
@@ -50,7 +46,6 @@ img {
     border: 3px solid #4b006e;
 }
 
-/* Small icons (scroll-up icon) */
 .icon-small {
     width: 32px !important;
     height: auto;
@@ -191,4 +186,41 @@ dd {
 }
 
 /* ============================================================
-   TRANS
+   TRANSCRIPT PAGE STYLES
+   ============================================================ */
+
+.transcript-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Custom planchette bullet for recommendations */
+.recommendations {
+    list-style-image: url("images/planchette.png");
+}
+
+.recommendations li {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #c7b6d9;
+}
+
+footer a {
+    color: #a6ffcb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 6px #a6ffcb;
+}
