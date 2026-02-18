@@ -156,7 +156,7 @@ dd {
 }
 
 /* ============================================================
-   RESUME PAGE — PERFECT TWO-COLUMN ALIGNMENT
+   RESUME PAGE — TWO-COLUMN ROWS + DOTTED DIVIDER
    ============================================================ */
 
 #resume {
@@ -200,13 +200,11 @@ dd {
     margin-bottom: 20px;
 }
 
-/* Default list-style-image (Chrome/Edge) */
 .recommendations {
     list-style-image: url("images/icon.png");
     list-style-position: outside;
 }
 
-/* Firefox requires ::marker to show custom images */
 .recommendations li::marker {
     content: url("images/icon.png");
 }
