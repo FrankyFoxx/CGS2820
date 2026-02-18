@@ -195,9 +195,9 @@ dd {
     margin-bottom: 20px;
 }
 
-/* Custom planchette bullet for recommendations */
+/* Custom planchette bullet using icon.png */
 .recommendations {
-    list-style-image: url("images/planchette.png");
+    list-style-image: url("images/icon.png");
 }
 
 .recommendations li {
