@@ -7,8 +7,8 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 
-    /* OUTER BACKGROUND (blue arrows area) */
-    background-color: #0d0017; /* purple outer background */
+    /* OUTER BACKGROUND (blue arrow area) */
+    background-color: #0d0017;
     color: #f4eaff;
     line-height: 1.6;
 }
@@ -25,9 +25,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    /* Remove the semi-transparent overlay so the image shows */
     background-color: transparent;
-
     padding: 20px;
     border-radius: 10px;
 }
@@ -247,13 +245,21 @@ dd {
     box-shadow: 0 0 14px rgba(166, 255, 203, 0.35);
 }
 
-/* Uniform image sizing */
+/* UNIFORM IMAGE SIZE + NEW BORDER STYLE */
 #figureContainer img {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid #4b006e;
+
+    /* Thick framed border like your example */
+    border: 6px solid #4b006e;
+    outline: 3px solid #a6ffcb;
+    outline-offset: -6px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
 }
 
 #figureContainer figcaption {
