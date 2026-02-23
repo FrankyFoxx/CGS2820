@@ -27,13 +27,14 @@ body {
 }
 
 /* ============================================================
-   BANNER / HEADER
+   BANNER / HEADER (NO CROPPING)
    ============================================================ */
 
 .site-banner {
     width: 100%;
-    height: 320px; /* Twice the portfolio image height */
-    object-fit: cover;
+    height: auto;          /* show full banner, no cropping */
+    max-height: 400px;     /* optional cap so it doesn't get huge */
+    object-fit: contain;   /* show entire image */
     display: block;
     border-radius: 6px;
     margin-bottom: 20px;
@@ -43,7 +44,7 @@ body {
    IMAGE SIZING
    ============================================================ */
 
-/* Prevent ALL images from stretching full width unless given a class */
+/* Prevent ALL images from stretching unless given a class */
 img {
     display: block;
     margin: 0 auto;
@@ -190,7 +191,7 @@ hr {
 
 .portfolio-item img {
     width: 100%;
-    height: 160px; /* Half of banner height */
+    height: 160px; /* portfolio images stay consistent */
     object-fit: cover;
 
     border: 6px solid #4b006e;
