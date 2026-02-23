@@ -30,10 +30,11 @@ body {
    BANNER / HEADER
    ============================================================ */
 
-.hero-banner {
+.site-banner {
     width: 100%;
-    height: 250px;
+    height: 400px; /* Twice the portfolio image height */
     object-fit: cover;
+    display: block;
     border-radius: 6px;
     margin-bottom: 20px;
 }
@@ -176,7 +177,7 @@ hr {
 
 .portfolio-item img {
     width: 100%;
-    height: 200px;
+    height: 200px; /* Portfolio image height */
     object-fit: cover;
 
     border: 6px solid #4b006e;
