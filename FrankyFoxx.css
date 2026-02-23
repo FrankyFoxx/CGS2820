@@ -21,10 +21,9 @@ body {
 }
 
 /* ============================================================
-   IMAGE SIZING (FINAL + CORRECT)
+   IMAGE SIZING
    ============================================================ */
 
-/* Default images */
 img {
     max-width: 100%;
     height: auto;
@@ -32,25 +31,14 @@ img {
     margin: 0 auto;
 }
 
-/* Homepage rollover images */
-.rollover-img {
-    width: 200px;
-    height: auto;
-}
-
-/* Banner image */
 .hero-img {
-    width: 40%;
-    max-width: 500px;
-    height: auto;
+    width: 60%;
 }
 
-/* Body images */
 .body-img {
     width: 40%;
 }
 
-/* Profile image */
 .profile-pic {
     width: 140px;
     height: auto;
@@ -58,7 +46,6 @@ img {
     border: 3px solid #4b006e;
 }
 
-/* Small icons */
 .icon-small {
     width: 32px !important;
     height: auto;
@@ -169,42 +156,37 @@ dd {
 }
 
 /* ============================================================
-   RESUME PAGE — TWO-COLUMN ROWS + DOTTED DIVIDER
+   RESUME PAGE LAYOUT
    ============================================================ */
 
 #resume {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 20px;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
 }
 
-.resume-row {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: start;
-    column-gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px dotted #ffffff;
+#resume aside {
+    flex: 0 0 25%;
 }
 
-.resume-row:last-child {
-    border-bottom: none;
+#resume section {
+    flex: 1 0 70%;
 }
 
-.resume-row aside {
-    color: #a6ffcb;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: 0 0 6px #4b006e;
-}
+@media only screen and (max-width: 700px) {
+    #resume {
+        flex-direction: column;
+    }
 
-.resume-row section {
-    color: #f4eaff;
+    #resume aside,
+    #resume section {
+        flex: 1 0 100%;
+    }
 }
 
 /* ============================================================
-   TRANSCRIPT PAGE — CUSTOM BULLET ICONS
+   TRANSCRIPT PAGE STYLES
    ============================================================ */
 
 .transcript-intro {
@@ -213,20 +195,15 @@ dd {
     margin-bottom: 20px;
 }
 
-/* Remove default bullets */
+/* Custom planchette bullet for recommendations */
 .recommendations {
-    list-style: none;
-    padding-left: 40px;
+    list-style-image: url("images/planchette.png");
 }
 
-/* Custom icon bullets with controlled size */
+/* Prevent overrides from wiping out the icon */
 .recommendations li {
-    background-image: url("images/icon.png");
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 0 3px;
-    padding-left: 28px;
-    margin-bottom: 10px;
+    list-style-position: outside;
+    margin-left: 20px;
 }
 
 /* ============================================================
