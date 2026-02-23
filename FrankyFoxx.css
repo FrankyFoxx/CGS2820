@@ -6,16 +6,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0d0017;
+
+    /* OUTER BACKGROUND (blue arrows area) */
+    background-color: #0d0017; /* purple outer background */
     color: #f4eaff;
     line-height: 1.6;
 }
 
+/* WRAPPER BACKGROUND (red circle area) */
 #wrapper {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.05);
+
+    /* Background image INSIDE the wrapper */
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Remove the semi-transparent overlay so the image shows */
+    background-color: transparent;
+
     padding: 20px;
     border-radius: 10px;
 }
@@ -195,15 +207,85 @@ dd {
     margin-bottom: 20px;
 }
 
-/* Custom planchette bullet for recommendations */
 .recommendations {
     list-style-image: url("images/planchette.png");
 }
 
-/* Prevent overrides from wiping out the icon */
 .recommendations li {
     list-style-position: outside;
     margin-left: 20px;
+}
+
+/* ============================================================
+   PORTFOLIO PAGE – RESPONSIVE GALLERY
+   ============================================================ */
+
+#figureContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#figureContainer section {
+    margin: 0 auto;
+}
+
+#figureContainer figure {
+    display: inline-block;
+    width: 320px;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 2px solid #4b006e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(166, 255, 203, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#figureContainer figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 14px rgba(166, 255, 203, 0.35);
+}
+
+/* Uniform image sizing */
+#figureContainer img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #4b006e;
+}
+
+#figureContainer figcaption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #a6ffcb;
+    text-shadow: 0 0 4px #4b006e;
+}
+
+/* Responsive behavior */
+@media only screen and (max-width: 600px) {
+    #figureContainer figure {
+        width: 90%;
+        margin: 12px auto;
+    }
+
+    #figureContainer img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    #figureContainer figure {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #figureContainer figure {
+        width: 320px;
+    }
 }
 
 /* ============================================================
