@@ -27,21 +27,7 @@ body {
 }
 
 /* ============================================================
-   BANNER — MATCHES ROLLOVER IMAGE SIZE
-   ============================================================ */
-
-.site-banner {
-    width: 60%;          /* same width as rollover image */
-    max-width: 500px;    /* same max width */
-    height: auto;        /* keeps full image, no cropping */
-    object-fit: contain; /* ensures full banner is visible */
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 6px;
-}
-
-/* ============================================================
-   IMAGE SIZING
+   IMAGE DEFAULTS
    ============================================================ */
 
 img {
@@ -51,7 +37,10 @@ img {
     max-width: 100%;
 }
 
-/* Home page rollover image */
+/* ============================================================
+   HOME PAGE IMAGES
+   ============================================================ */
+
 .rollover-img {
     width: 60%;
     max-width: 500px;
@@ -59,7 +48,6 @@ img {
     border-radius: 6px;
 }
 
-/* Home page body images */
 .body-img {
     width: 50%;
     max-width: 450px;
@@ -67,7 +55,6 @@ img {
     border-radius: 6px;
 }
 
-/* Home page profile image */
 .profile-pic {
     width: 140px;
     border-radius: 50%;
@@ -201,15 +188,6 @@ hr {
     border-radius: 4px;
 }
 
-.portfolio-item h3 {
-    margin-top: 12px;
-}
-
-.portfolio-item p {
-    color: #c7b6d9;
-    font-size: 0.95rem;
-}
-
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -228,4 +206,18 @@ footer a {
 
 footer a:hover {
     text-shadow: 0 0 6px #a6ffcb;
+}
+
+/* ============================================================
+   FINAL BANNER RULE — MUST BE LAST
+   ============================================================ */
+
+.site-banner {
+    width: 60%;          /* EXACT same as rollover */
+    max-width: 500px;    /* EXACT same as rollover */
+    height: auto;        /* no cropping */
+    object-fit: contain; /* show full banner */
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 6px;
 }
