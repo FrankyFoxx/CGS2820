@@ -32,7 +32,7 @@ body {
 
 .site-banner {
     width: 100%;
-    height: 400px; /* Twice the portfolio image height */
+    height: 320px; /* Twice the portfolio image height */
     object-fit: cover;
     display: block;
     border-radius: 6px;
@@ -43,22 +43,25 @@ body {
    IMAGE SIZING
    ============================================================ */
 
+/* Prevent ALL images from stretching full width unless given a class */
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
     margin: 0 auto;
+    height: auto;
+    max-width: 100%;
 }
 
+/* Home page profile image */
 .profile-pic {
     width: 140px;
     border-radius: 50%;
     border: 3px solid #4b006e;
 }
 
-.icon-small {
-    width: 32px !important;
-    height: auto;
+/* Optional home-page images */
+.home-img {
+    width: 60%;
+    max-width: 500px;
 }
 
 /* ============================================================
@@ -177,7 +180,7 @@ hr {
 
 .portfolio-item img {
     width: 100%;
-    height: 200px; /* Portfolio image height */
+    height: 160px; /* Half of banner height */
     object-fit: cover;
 
     border: 6px solid #4b006e;
