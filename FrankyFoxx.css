@@ -27,24 +27,23 @@ body {
 }
 
 /* ============================================================
-   BANNER / HEADER (NO CROPPING)
+   BANNER — MATCHES ROLLOVER IMAGE SIZE
    ============================================================ */
 
 .site-banner {
-    width: 100%;
-    height: auto;          /* show full banner, no cropping */
-    max-height: 400px;     /* optional cap so it doesn't get huge */
-    object-fit: contain;   /* show entire image */
+    width: 60%;          /* same width as rollover image */
+    max-width: 500px;    /* same max width */
+    height: auto;        /* keeps full image, no cropping */
+    object-fit: contain; /* ensures full banner is visible */
     display: block;
+    margin: 0 auto 20px auto;
     border-radius: 6px;
-    margin-bottom: 20px;
 }
 
 /* ============================================================
    IMAGE SIZING
    ============================================================ */
 
-/* Prevent ALL images from stretching unless given a class */
 img {
     display: block;
     margin: 0 auto;
@@ -163,7 +162,7 @@ hr {
 }
 
 /* ============================================================
-   PORTFOLIO – RESPONSIVE GRID
+   PORTFOLIO GRID
    ============================================================ */
 
 .portfolio-grid {
@@ -191,7 +190,7 @@ hr {
 
 .portfolio-item img {
     width: 100%;
-    height: 160px; /* portfolio images stay consistent */
+    height: 160px;
     object-fit: cover;
 
     border: 6px solid #4b006e;
