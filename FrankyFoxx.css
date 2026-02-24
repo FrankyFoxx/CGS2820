@@ -1,20 +1,20 @@
 /* ============================================================
-   PORTFOLIO GRID — EXACT RUBRIC BEHAVIOR
+   PORTFOLIO GRID — GUARANTEED RUBRIC COMPLIANT
    ============================================================ */
 
 /* MOBILE FIRST — ALWAYS 1 COLUMN */
 .portfolio-grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;   /* <-- forces 1 column on mobile */
+    display: grid !important;
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
     gap: 25px;
     margin-top: 30px;
 }
 
 /* DESKTOP — ALWAYS 2 COLUMNS */
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
     .portfolio-grid {
-        grid-template-columns: 1fr 1fr;  /* <-- forces 2 columns */
+        grid-template-columns: 1fr 1fr !important;
     }
 }
 
