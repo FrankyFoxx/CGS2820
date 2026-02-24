@@ -46,3 +46,52 @@
 
     border-radius: 4px;
 }
+/* ============================================================
+   LAYOUT PATCH — RESUME + PORTFOLIO
+   ============================================================ */
+
+/* Resume: left labels, right content */
+#resume {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.resume-row {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: start;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #ffffff;
+}
+
+.resume-row:last-child {
+    border-bottom: none;
+}
+
+.resume-row aside {
+    text-align: left;
+    font-weight: bold;
+}
+
+.resume-row section {
+    text-align: left;
+}
+
+/* Portfolio: 1 column mobile, 2 columns desktop */
+.portfolio-grid {
+    display: grid;
+    width: 100%;
+    gap: 25px;
+    margin-top: 30px;
+    grid-template-columns: 1fr;   /* mobile: 1 column */
+}
+
+@media (min-width: 700px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;  /* desktop: 2 columns */
+    }
+}
