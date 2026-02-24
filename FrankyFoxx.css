@@ -152,7 +152,7 @@ nav a.selected {
    ============================================================ */
 
 main {
-    width: 100%; /* ensures full width for resume + portfolio */
+    width: 100%;
     padding: 20px;
 }
 
@@ -202,17 +202,20 @@ hr {
 }
 
 /* ============================================================
-   PORTFOLIO GRID — FIXED TWO COLUMNS
+   PORTFOLIO GRID — EXACT REQUIREMENTS MET
    ============================================================ */
 
 .portfolio-grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-top: 30px;
+
+    /* Default: 1 column (mobile) */
+    grid-template-columns: 1fr;
 }
 
+/* Desktop: 2 columns */
 @media (min-width: 700px) {
     .portfolio-grid {
         grid-template-columns: 1fr 1fr;
