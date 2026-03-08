@@ -318,7 +318,7 @@ blockquote::first-letter {
 
 /* Witchy bullet list */
 .witchy-list {
-    list-style-image: url("images/moonbullet.png");
+    list-style-image: url("images/moonbullet64.png");
     margin-left: 40px;
     padding-left: 10px;
 }
@@ -349,4 +349,5 @@ blockquote::first-letter {
 
 @keyframes fadeIn {
     to { opacity: 1; }
+
 }
