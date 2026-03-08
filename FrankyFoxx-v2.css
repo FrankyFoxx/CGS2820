@@ -267,3 +267,86 @@ footer a {
 footer a:hover {
     text-shadow: 0 0 6px #a6ffcb;
 }
+/* ============================================================
+   NEWSLETTER ELEMENTS
+   ============================================================ */
+
+/* Blockquote styling */
+blockquote {
+    text-align: justify;
+    margin: 25px auto;
+    padding: 15px 20px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-left: 6px solid #a6ffcb;
+    border-radius: 6px;
+    font-style: italic;
+}
+
+/* First-letter pseudo-element (required) */
+blockquote::first-letter {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #a6ffcb;
+    text-shadow: 0 0 6px #4b006e;
+}
+
+/* Box section */
+.box {
+    border: 3px solid #4b006e;
+    background-color: rgba(75, 0, 110, 0.25);
+    padding: 20px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(166, 255, 203, 0.25);
+}
+
+/* Infobar (inverse color bar) */
+.infobar {
+    background-color: #a6ffcb;
+    color: #0d0017;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    margin: 35px auto;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(166, 255, 203, 0.4);
+}
+
+/* Witchy bullet list */
+.witchy-list {
+    list-style-image: url("images/moonbullet.png");
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+.witchy-list li {
+    margin: 10px 0;
+}
+
+/* ============================================================
+   CSS3 FEATURES (Required)
+   ============================================================ */
+
+/* Soft glow animation */
+.glow {
+    animation: softGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes softGlow {
+    from { text-shadow: 0 0 4px #a6ffcb; }
+    to   { text-shadow: 0 0 12px #a6ffcb; }
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
