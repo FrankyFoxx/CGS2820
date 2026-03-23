@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Franky Foxx | Contact</title>
+
+  <meta name="author" content="Franky Foxx">
+  <meta name="description" content="Contact page for Franky Foxx — web designer specializing in witchy-gothic branding and responsive layouts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="FrankyFoxx-v2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+    <a href="index.html">
+      <img src="images/ffbanner.png" alt="FrankyFoxx Witchy-Gothic Banner" class="site-banner">
+    </a>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="contact.html" class="selected">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="images/frankyfoxx.jpg" alt="Photo of Franky Foxx" class="profile-pic">
+
+  <h1>Contact Me</h1>
+
+  <main id="contact">
+
+    <form action="#" method="post">
+      <table>
+
+        <!-- Row 1: Table Header -->
+        <tr>
+          <th colspan="2">Contact Information</th>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+          <td class="right"><span class="required">*</span> First Name:</td>
+          <td><input type="text" name="fname"></td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+          <td class="right"><span class="required">*</span> Last Name:</td>
+          <td><input type="text" name="lname"></td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+          <td class="right">City:</td>
+          <td><input type="text" name="city"></td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+          <td class="right">ST:</td>
+          <td>
+            <select name="state">
+              <option value="">Select</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>AL</option>
+              <option>SC</option>
+              <option>NC</option>
+              <option>TN</option>
+              <option>VA</option>
+              <option>Other</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Row 6 -->
+        <tr>
+          <td class="right">Zip:</td>
+          <td><input type="text" name="zip"></td>
+        </tr>
+
+        <!-- Row 7 -->
+        <tr>
+          <td class="right"><span class="required">*</span> Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+
+        <!-- Row 8 -->
+        <tr>
+          <td class="right">Gender:</td>
+          <td>
+            <label><input type="radio" name="gender" value="M"> M</label>
+            <label><input type="radio" name="gender" value="F"> F</label>
+          </td>
+        </tr>
+
+        <!-- Row 9 -->
+        <tr>
+          <td class="right">Education:</td>
+          <td>
+            <label><input type="radio" name="edu" value="AS"> AS</label>
+            <label><input type="radio" name="edu" value="BS"> BS</label>
+          </td>
+        </tr>
+
+        <!-- Row 10 -->
+        <tr>
+          <td class="right">Comments:</td>
+          <td><textarea name="comments" rows="4" cols="30"></textarea></td>
+        </tr>
+
+        <!-- Row 11 -->
+        <tr>
+          <td colspan="2" class="table-center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+
+      </table>
+    </form>
+
+  </main>
+
+  <footer>
+    © 2026 Franky Foxx — Web Designer
+  </footer>
+
+</div><!-- end wrapper -->
+</body>
+</html>

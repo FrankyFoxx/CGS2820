@@ -1,354 +1,85 @@
 /* ============================================================
-   GLOBAL BASE STYLES
+   CONTACT PAGE — TABLE STYLING (Required)
    ============================================================ */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0d0017;
-    color: #f4eaff;
-    line-height: 1.6;
-}
-
-#wrapper {
+/* Table base styling */
+table {
     width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-
-    background-image: url("images/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* ============================================================
-   IMAGE DEFAULTS
-   ============================================================ */
-
-img {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-}
-
-/* ============================================================
-   BANNER — SAME SIZE AS ROLLOVER IMAGE
-   ============================================================ */
-
-.site-banner {
-    width: 60%;
-    max-width: 500px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 20px auto;
-    border-radius: 6px;
-}
-
-/* ============================================================
-   HOME PAGE IMAGES
-   ============================================================ */
-
-.rollover-img {
-    width: 60%;
-    max-width: 500px;
-    border: 4px solid #4b006e;
-    border-radius: 6px;
-}
-
-.body-img {
-    width: 50%;
-    max-width: 450px;
-    border: 4px solid #4b006e;
-    border-radius: 6px;
-}
-
-.profile-pic {
-    width: 140px;
-    border-radius: 50%;
-    border: 3px solid #4b006e;
-}
-
-/* ============================================================
-   HEADINGS
-   ============================================================ */
-
-h1, h2, h3 {
-    color: #a6ffcb;
-    text-shadow: 0 0 6px #4b006e;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* ============================================================
-   NAVIGATION
-   ============================================================ */
-
-nav {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav a {
-    display: block;
-    width: 30%;
-    margin: 8px auto;
-    padding: 10px;
-    text-decoration: none;
-
-    border: 2px solid #4b006e;
-    background-color: rgba(75, 0, 110, 0.4);
-    color: #f4eaff;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 6px;
-    transition: 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #6a0dad;
-    color: #a6ffcb;
-    text-shadow: 0 0 6px #a6ffcb;
-}
-
-nav a.selected {
-    background-color: #4b006e;
-    color: #a6ffcb;
-    text-shadow: 0 0 8px #a6ffcb;
-}
-
-@media only screen and (min-width: 640px) {
-    nav a {
-        display: inline;
-        width: auto;
-        padding: 10px 18px;
-        margin: 0;
-    }
-
-    nav li {
-        display: inline;
-        padding: 0 18px;
-    }
-}
-
-/* ============================================================
-   MAIN CONTENT
-   ============================================================ */
-
-main {
-    width: 100%;
-    padding: 20px;
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background: linear-gradient(to right, #4b006e, #a6ffcb, #4b006e);
-    margin: 30px 0;
-}
-
-/* ============================================================
-   RESUME PAGE — FIXED TWO-COLUMN ALIGNMENT
-   ============================================================ */
-
-#resume {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.resume-row {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: start;
-    column-gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px dotted #ffffff;
-}
-
-.resume-row:last-child {
-    border-bottom: none;
-}
-
-.resume-row aside {
-    color: #a6ffcb;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: 0 0 6px #4b006e;
-    text-align: left;
-}
-
-.resume-row section {
-    color: #f4eaff;
-    text-align: left;
-}
-
-/* ============================================================
-   PORTFOLIO GRID — GUARANTEED RUBRIC COMPLIANT
-   ============================================================ */
-
-.portfolio-grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 30px;
-}
-
-@media (min-width: 700px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.portfolio-item {
-    background-color: rgba(255, 255, 255, 0.06);
-    border: 2px solid #4b006e;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-
-    box-shadow: 0 0 10px rgba(166, 255, 203, 0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 14px rgba(166, 255, 203, 0.35);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-
-    border: 6px solid #4b006e;
-    outline: 3px solid #a6ffcb;
-    outline-offset: -6px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-
-    border-radius: 4px;
-}
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #c7b6d9;
-}
-
-footer a {
-    color: #a6ffcb;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-shadow: 0 0 6px #a6ffcb;
-}
-/* ============================================================
-   NEWSLETTER ELEMENTS
-   ============================================================ */
-
-/* Blockquote styling */
-blockquote {
-    text-align: justify;
     margin: 25px auto;
-    padding: 15px 20px;
-    width: 85%;
+    border: 4px solid #4b006e;
+    border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.06);
-    border-left: 6px solid #a6ffcb;
-    border-radius: 6px;
-    font-style: italic;
-}
-
-/* First-letter pseudo-element (required) */
-blockquote::first-letter {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #a6ffcb;
-    text-shadow: 0 0 6px #4b006e;
-}
-
-/* Box section */
-.box {
-    border: 3px solid #4b006e;
-    background-color: rgba(75, 0, 110, 0.25);
-    padding: 20px;
-    margin: 30px auto;
-    width: 85%;
-    border-radius: 8px;
     box-shadow: 0 0 12px rgba(166, 255, 203, 0.25);
 }
 
-/* Infobar (inverse color bar) */
-.infobar {
-    background-color: #a6ffcb;
-    color: #0d0017;
-    padding: 12px;
+/* Table cells */
+td {
+    padding: 10px 14px;
+    border: 1px solid #4b006e;
+    color: #f4eaff;
+}
+
+/* Right-aligned first column */
+td.right {
+    text-align: right;
+    font-weight: bold;
+    width: 40%;
+}
+
+/* Table header */
+th {
+    padding: 14px;
     text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    background-color: rgba(75, 0, 110, 0.6);
+    color: #a6ffcb;
+    border: 2px solid #4b006e;
+    text-shadow: 0 0 6px #4b006e;
+}
+
+/* Required field asterisk */
+.required {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+/* Inputs, selects, textareas */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #4b006e;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f4eaff;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit + Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #4b006e;
+    border-radius: 6px;
+    background-color: rgba(75, 0, 110, 0.4);
+    color: #a6ffcb;
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 6px;
-    margin: 35px auto;
-    width: 90%;
-    box-shadow: 0 0 10px rgba(166, 255, 203, 0.4);
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/* Witchy bullet list */
-.witchy-list {
-    list-style-image: url("images/moonbullet32.png");
-    margin-left: 40px;
-    padding-left: 10px;
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #6a0dad;
+    color: #f4eaff;
+    text-shadow: 0 0 6px #a6ffcb;
 }
-
-.witchy-list li {
-    margin: 10px 0;
-}
-
-/* ============================================================
-   CSS3 FEATURES (Required)
-   ============================================================ */
-
-/* Soft glow animation */
-.glow {
-    animation: softGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes softGlow {
-    from { text-shadow: 0 0 4px #a6ffcb; }
-    to   { text-shadow: 0 0 12px #a6ffcb; }
-}
-
-/* Fade-in effect */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.4s ease forwards;
-}
-
-@keyframes fadeIn {
-    to { opacity: 1; }
-
-}
-
