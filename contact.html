@@ -8,7 +8,9 @@
   <meta name="description" content="Contact page for Franky Foxx — web designer specializing in witchy-gothic branding and responsive layouts.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="FrankyFoxx-v2.css" rel="stylesheet" type="text/css">
+  <link href="FrankyFoxx-v2.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 
 <body>
@@ -36,37 +38,33 @@
 
   <main id="contact">
 
-    <form action="#" method="post">
+    <!-- ★ Updated to send form data to FormProcess.php -->
+    <form action="FormProcess.php" method="post">
       <table>
 
-        <!-- Row 1: Table Header -->
         <tr>
           <th colspan="2">Contact Information</th>
         </tr>
 
-        <!-- Row 2 -->
         <tr>
-          <td class="right"><span class="required">*</span> First Name:</td>
-          <td><input type="text" name="fname"></td>
+          <td class="right"><label for="fname"><span class="required">*</span> First Name:</label></td>
+          <td><input type="text" id="fname" name="fname" required tabindex="1"></td>
         </tr>
 
-        <!-- Row 3 -->
         <tr>
-          <td class="right"><span class="required">*</span> Last Name:</td>
-          <td><input type="text" name="lname"></td>
+          <td class="right"><label for="lname"><span class="required">*</span> Last Name:</label></td>
+          <td><input type="text" id="lname" name="lname" required tabindex="2"></td>
         </tr>
 
-        <!-- Row 4 -->
         <tr>
-          <td class="right">City:</td>
-          <td><input type="text" name="city"></td>
+          <td class="right"><label for="city">City:</label></td>
+          <td><input type="text" id="city" name="city" tabindex="3"></td>
         </tr>
 
-        <!-- Row 5 -->
         <tr>
-          <td class="right">ST:</td>
+          <td class="right"><label for="state">ST:</label></td>
           <td>
-            <select name="state">
+            <select id="state" name="state" tabindex="4">
               <option value="">Select</option>
               <option>FL</option>
               <option>GA</option>
@@ -80,47 +78,41 @@
           </td>
         </tr>
 
-        <!-- Row 6 -->
         <tr>
-          <td class="right">Zip:</td>
-          <td><input type="text" name="zip"></td>
+          <td class="right"><label for="zip">Zip:</label></td>
+          <td><input type="text" id="zip" name="zip" tabindex="5"></td>
         </tr>
 
-        <!-- Row 7 -->
         <tr>
-          <td class="right"><span class="required">*</span> Email:</td>
-          <td><input type="email" name="email"></td>
+          <td class="right"><label for="email"><span class="required">*</span> Email:</label></td>
+          <td><input type="email" id="email" name="email" required tabindex="6"></td>
         </tr>
 
-        <!-- Row 8 -->
         <tr>
           <td class="right">Gender:</td>
           <td>
-            <label><input type="radio" name="gender" value="M"> M</label>
-            <label><input type="radio" name="gender" value="F"> F</label>
+            <label><input type="radio" name="gender" value="M" tabindex="7"> M</label>
+            <label><input type="radio" name="gender" value="F" tabindex="8"> F</label>
           </td>
         </tr>
 
-        <!-- Row 9 -->
         <tr>
           <td class="right">Education:</td>
           <td>
-            <label><input type="radio" name="edu" value="AS"> AS</label>
-            <label><input type="radio" name="edu" value="BS"> BS</label>
+            <label><input type="radio" name="edu" value="AS" tabindex="9"> AS</label>
+            <label><input type="radio" name="edu" value="BS" tabindex="10"> BS</label>
           </td>
         </tr>
 
-        <!-- Row 10 -->
         <tr>
-          <td class="right">Comments:</td>
-          <td><textarea name="comments" rows="4" cols="30"></textarea></td>
+          <td class="right"><label for="comments">Comments:</label></td>
+          <td><textarea id="comments" name="comments" rows="4" cols="30" tabindex="11"></textarea></td>
         </tr>
 
-        <!-- Row 11 -->
         <tr>
           <td colspan="2" class="table-center">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input type="submit" value="Submit" tabindex="12">
+            <input type="reset" value="Reset" tabindex="13">
           </td>
         </tr>
 
@@ -133,6 +125,6 @@
     © 2026 Franky Foxx — Web Designer
   </footer>
 
-</div><!-- end wrapper -->
+</div>
 </body>
 </html>

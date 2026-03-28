@@ -267,11 +267,11 @@ footer a {
 footer a:hover {
     text-shadow: 0 0 6px #a6ffcb;
 }
+
 /* ============================================================
    NEWSLETTER ELEMENTS
    ============================================================ */
 
-/* Blockquote styling */
 blockquote {
     text-align: justify;
     margin: 25px auto;
@@ -283,7 +283,6 @@ blockquote {
     font-style: italic;
 }
 
-/* First-letter pseudo-element (required) */
 blockquote::first-letter {
     font-size: 2.2em;
     font-weight: bold;
@@ -291,7 +290,6 @@ blockquote::first-letter {
     text-shadow: 0 0 6px #4b006e;
 }
 
-/* Box section */
 .box {
     border: 3px solid #4b006e;
     background-color: rgba(75, 0, 110, 0.25);
@@ -302,7 +300,6 @@ blockquote::first-letter {
     box-shadow: 0 0 12px rgba(166, 255, 203, 0.25);
 }
 
-/* Infobar (inverse color bar) */
 .infobar {
     background-color: #a6ffcb;
     color: #0d0017;
@@ -316,9 +313,8 @@ blockquote::first-letter {
     box-shadow: 0 0 10px rgba(166, 255, 203, 0.4);
 }
 
-/* Witchy bullet list */
 .witchy-list {
-list-style-image: url("images/moonbullet32.png?v=2");
+    list-style-image: url("images/moonbullet.png");
     margin-left: 40px;
     padding-left: 10px;
 }
@@ -331,7 +327,6 @@ list-style-image: url("images/moonbullet32.png?v=2");
    CSS3 FEATURES (Required)
    ============================================================ */
 
-/* Soft glow animation */
 .glow {
     animation: softGlow 3s ease-in-out infinite alternate;
 }
@@ -341,7 +336,6 @@ list-style-image: url("images/moonbullet32.png?v=2");
     to   { text-shadow: 0 0 12px #a6ffcb; }
 }
 
-/* Fade-in effect */
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.4s ease forwards;
@@ -350,53 +344,65 @@ list-style-image: url("images/moonbullet32.png?v=2");
 @keyframes fadeIn {
     to { opacity: 1; }
 }
+
 /* ============================================================
-   CONTACT PAGE — TABLE STYLING (Required)
+   CONTACT PAGE — WITCHY-GOTHIC UPGRADE
    ============================================================ */
 
-/* Table base styling */
+/* Table container glow */
 table {
     width: 90%;
     margin: 25px auto;
     border: 4px solid #4b006e;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.06);
-    box-shadow: 0 0 12px rgba(166, 255, 203, 0.25);
+    background-color: rgba(20, 0, 35, 0.55);
+    box-shadow: 0 0 18px rgba(166, 255, 203, 0.35), 0 0 8px #4b006e inset;
+    backdrop-filter: blur(3px);
+}
+
+/* Table header — glowing lunar bar */
+th {
+    padding: 14px;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #4b006e, #a6ffcb, #4b006e);
+    color: #0d0017;
+    border: 2px solid #4b006e;
+    text-shadow: 0 0 8px #ffffff;
+    font-weight: bold;
+    animation: headerPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes headerPulse {
+    from { box-shadow: 0 0 8px #a6ffcb; }
+    to   { box-shadow: 0 0 18px #a6ffcb; }
 }
 
 /* Table cells */
 td {
-    padding: 10px 14px;
+    padding: 12px 16px;
     border: 1px solid #4b006e;
     color: #f4eaff;
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
-/* Right-aligned first column */
+/* First column alignment */
 td.right {
     text-align: right;
     font-weight: bold;
     width: 40%;
-}
-
-/* Table header */
-th {
-    padding: 14px;
-    text-align: center;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    background-color: rgba(75, 0, 110, 0.6);
     color: #a6ffcb;
-    border: 2px solid #4b006e;
     text-shadow: 0 0 6px #4b006e;
 }
 
-/* Required field asterisk */
+/* Required asterisk */
 .required {
     color: #ff4d6d;
-    font-weight: bold;
+    text-shadow: 0 0 6px #ff4d6d;
 }
 
-/* Inputs, selects, textareas */
+/* Inputs */
 input[type="text"],
 input[type="email"],
 select,
@@ -408,8 +414,19 @@ textarea {
     background-color: rgba(255, 255, 255, 0.08);
     color: #f4eaff;
     font-size: 1rem;
+    box-shadow: 0 0 6px rgba(166, 255, 203, 0.25);
+    transition: 0.3s ease;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #a6ffcb;
+    box-shadow: 0 0 12px #a6ffcb;
+}
+
+/* Textarea */
 textarea {
     resize: vertical;
 }
@@ -417,16 +434,17 @@ textarea {
 /* Submit + Reset buttons */
 input[type="submit"],
 input[type="reset"] {
-    padding: 10px 20px;
+    padding: 10px 22px;
     margin: 10px;
     border: 2px solid #4b006e;
     border-radius: 6px;
-    background-color: rgba(75, 0, 110, 0.4);
+    background-color: rgba(75, 0, 110, 0.5);
     color: #a6ffcb;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
+    box-shadow: 0 0 8px rgba(166, 255, 203, 0.25);
 }
 
 input[type="submit"]:hover,
@@ -434,4 +452,5 @@ input[type="reset"]:hover {
     background-color: #6a0dad;
     color: #f4eaff;
     text-shadow: 0 0 6px #a6ffcb;
+    box-shadow: 0 0 14px rgba(166, 255, 203, 0.45);
 }
