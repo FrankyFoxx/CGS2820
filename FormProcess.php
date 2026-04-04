@@ -2,8 +2,7 @@
 // Check that the form was submitted and Email exists
 if(isset($_POST['email'])) {
 
-
-    $email_to = "mizzfrankyfoxx@hotmail.com";
+    $email_to = "MizzFrankyFoxx@hotmail.com";
     $email_subject = "Franky Foxx Contact Form Submission";
 
     function died($error) {
@@ -14,8 +13,6 @@ if(isset($_POST['email'])) {
     }
 
     // SECTION A — Assign variables from your form fields
-    // (Names MUST match your contact.html exactly)
-
     $FirstName = $_POST['fname'];      // required
     $LastName  = $_POST['lname'];      // required
     $City      = $_POST['city'];       // optional
@@ -50,25 +47,13 @@ if(isset($_POST['email'])) {
                'Reply-To: '.$email_from."\r\n" .
                'X-Mailer: PHP/' . phpversion();
 
+    // SECTION C — Send the email
     @mail($email_to, $email_subject, $email_message, $headers);
 
-    // REDIRECT SUPPORT — matches your rubric
-    // Your form includes: <input type="hidden" name="redirect" value="contactSent.html">
-    if(isset($_POST['redirect'])) {
-        $redirect_page = $_POST['redirect'];
-    } else {
-        $redirect_page = "contactSent.html"; // fallback
+    // SECTION D — Redirect back to your thank-you page
+    if (isset($_POST['redirect'])) {
+        header("Location: " . $_POST['redirect']);
+        exit();
     }
-?>
-<html>
-<head>
-<meta http-equiv="REFRESH" content="1;url=<?php echo $redirect_page; ?>">
-</head>
-<body>
-</body>
-</html>
-
-<?php
 }
-die();
 ?>
