@@ -454,3 +454,81 @@ input[type="reset"]:hover {
     text-shadow: 0 0 6px #a6ffcb;
     box-shadow: 0 0 14px rgba(166, 255, 203, 0.45);
 }
+/* --- Media Page Specific Styles --- */
+
+/* Centers the main content area */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Rubric Requirement: Ordered List Styling */
+ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 40px; /* Adds space between the 6 items */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444; /* Subtle line to separate items */
+}
+
+ol li strong {
+    display: block;
+    font-size: 1.4em;
+    color: #b388ff; /* A witchy purple to match your theme */
+    margin-bottom: 10px;
+}
+
+/* Audio and Video Player Responsiveness */
+audio, video {
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Simple Slideshow Styling */
+.slideshow {
+    position: relative;
+    max-width: 500px;
+    margin: 15px 0;
+    border: 3px solid #b388ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* GIF Styling */
+img[src$=".gif"] {
+    border: 2px solid #b388ff;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* YouTube Embed Styling */
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+/* Hover effect for Flickr link (Extra flair) */
+ol li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ol li a:hover {
+    text-decoration: underline;
+    color: #b388ff;
+}
