@@ -527,6 +527,21 @@ ol li a {
     text-decoration: none;
     font-weight: bold;
 }
+/* This makes the list items sit next to each other in a grid */
+ol {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px;       /* Space between the items */
+    list-style-position: inside; /* Keeps the numbers visible */
+    padding: 0;
+}
+
+ol li {
+    flex: 1 1 300px; /* Each item takes up at least 300px */
+    border: 1px solid #444;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05); /* Optional: slight background to see boxes */
+}
 
 ol li a:hover {
     text-decoration: underline;
