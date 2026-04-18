@@ -454,96 +454,62 @@ input[type="reset"]:hover {
     text-shadow: 0 0 6px #a6ffcb;
     box-shadow: 0 0 14px rgba(166, 255, 203, 0.45);
 }
-/* --- Media Page Specific Styles --- */
+/* ============================================================
+   MEDIA PAGE LAYOUT (Side-by-Side Grid)
+   ============================================================ */
 
-/* Centers the main content area */
-main {
+/* 1. The Grid Container: This forces items 1-6 into two columns */
+main ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns side-by-side */
+    gap: 30px;                      /* Space between the boxes */
+    padding: 20px 0;
+    list-style-position: inside;   /* Keeps the numbers (1-6) visible */
+    margin: 0;
+}
+
+/* 2. The List Items (The Boxes): Styles the background of each media item */
+main ol li {
+    background: rgba(75, 0, 110, 0.3); /* Dark purple tint to match your theme */
+    border: 3px solid #4b006e;         /* Gothic border color */
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;               /* Centers content horizontally */
+    text-align: center;
+    list-style-type: decimal;          /* Ensures it shows as 1, 2, 3... */
 }
 
-/* Rubric Requirement: Ordered List Styling */
-ol {
-    margin-top: 20px;
-    padding-left: 20px;
-}
-
-ol li {
-    margin-bottom: 40px; /* Adds space between the 6 items */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #444; /* Subtle line to separate items */
-}
-
-ol li strong {
-    display: block;
-    font-size: 1.4em;
-    color: #b388ff; /* A witchy purple to match your theme */
-    margin-bottom: 10px;
-}
-
-/* Audio and Video Player Responsiveness */
-audio, video {
-    display: block;
-    margin: 15px 0;
+/* 3. Media Elements: Ensures Video, Audio, and YouTube fit the boxes */
+main ol li audio, 
+main ol li video, 
+main ol li iframe {
+    width: 100% !important;
     max-width: 100%;
+    margin-top: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
-/* Simple Slideshow Styling */
-.slideshow {
-    position: relative;
-    max-width: 500px;
-    margin: 15px 0;
-    border: 3px solid #b388ff;
-    border-radius: 10px;
-    overflow: hidden;
+/* Forces the Video height so the grid boxes stay even */
+main ol li video {
+    height: 300px;
+    object-fit: cover; /* Prevents stretching */
 }
 
-.slideshow img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-/* GIF Styling */
+/* 4. GIF Animation Fix: Ensures browser doesn't treat the GIF as a static image */
 img[src$=".gif"] {
     border: 2px solid #b388ff;
-    border-radius: 8px;
-    margin: 10px 0;
+    margin-top: 15px;
+    image-rendering: auto; /* Helps the browser process the frames */
+    display: block;
 }
 
-/* YouTube Embed Styling */
-iframe {
-    max-width: 100%;
-    border-radius: 10px;
-    border: 1px solid #444;
+/* 5. Mobile/Tablet Fix: Stacks items to one column on smaller screens */
+@media (max-width: 850px) {
+    main ol {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Hover effect for Flickr link (Extra flair) */
-ol li a {
-    color: #00d4ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-/* This makes the list items sit next to each other in a grid */
-ol {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 20px;       /* Space between the items */
-    list-style-position: inside; /* Keeps the numbers visible */
-    padding: 0;
-}
-
-ol li {
-    flex: 1 1 300px; /* Each item takes up at least 300px */
-    border: 1px solid #444;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.05); /* Optional: slight background to see boxes */
-}
-
-ol li a:hover {
-    text-decoration: underline;
-    color: #b388ff;
-}
